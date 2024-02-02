@@ -1,0 +1,916 @@
+@font-face {
+    font-family: "Mario";
+    src: url("../fonts/Mario.otf");
+}
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("../fonts/PressStart2P.ttf");
+}
+
+@font-face {
+    font-family: "Mintsoda";
+    src: url("../fonts/Mintsoda.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    gap: 0px;
+    margin-top: 5%;
+}
+
+.main-infos img, .main-infos-japan img {
+    margin-bottom: 36px;
+}
+
+.main-infos a {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    background-color: #db3030;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px 20px;
+    margin-left: 24px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.2s;
+}
+
+.main-infos a:nth-of-type(2), .main-infos-japan a:nth-of-type(2) {
+    margin-left: 48px;
+}
+
+.main-infos a:hover, .main-infos-japan a:hover {
+    background-color: #b21f1f;
+    transition: 0.2s;
+}
+
+.main-infos-japan a {
+    font-family: "Mintsoda";
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: #db3030;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px 15px;
+    margin-left: 24px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.2s;
+}
+
+.main-screenshots {
+    text-align: center;
+    user-select: none;
+}
+
+.main-screenshots img {
+    width: 640px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.main-screenshots span {
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 28px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.main-screenshots p {
+    font-family: "Press Start 2P";
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    margin-top: 12px;
+    transition: 0.2s;
+}
+
+.main-screenshots p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.sub-content {
+    text-align: center;
+    margin-top: 76px;
+}
+
+.sub-content h1 {
+    font-family: "Mario";
+    color: white;
+    font-size: 56px;
+}
+
+.sub-content span {
+    color: #db3030;
+}
+
+.sub-content a {
+    color: #1f4eb2;
+    text-decoration: none;
+}
+
+.sub-content a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    font-family: "Press Start 2P";
+    font-size: 28px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 156px;
+}
+
+.nav-japan {
+    font-family: "Mintsoda";
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+nav a, p {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav p:hover {
+    cursor: default;
+}
+
+nav img {
+    border-bottom: solid 2px transparent;
+}
+
+nav img:hover {
+    cursor: pointer;
+    border-bottom: solid 2px white;
+}
+
+#languages, #menu {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    width: 18%;
+    background-color: #161819b3;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: -5%;
+    z-index: 1;
+}
+
+#languages p {
+    text-decoration: none;
+    margin-left: 12px;
+    margin: 10px 10px;
+}
+
+#languages a, #languages span {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+#languages p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#languages span:hover {
+    cursor: default;
+}
+
+#languages img {
+    border-bottom: solid transparent;
+}
+
+#languages a:nth-of-type(5) {
+    font-family: "Mintsoda";
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+#languages a:nth-of-type(5) p {
+    margin-top: 0px;
+}
+
+#languages .nl p {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#languages .jp p {
+    font-family: "Mintsoda";
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#languages .nl img {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#menu_img {
+    display: none;
+}
+
+@media screen and (max-width: 1680px) {
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #languages .nl img {
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    #languages .jp p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .main-infos img {
+        width: 70%;
+    }
+
+    .main-infos a {
+        font-size: 18px;
+    }
+
+    .main-screenshots img {
+        width: 560px;
+        height: 315px;
+    }
+
+    .sub-content h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #languages .nl img {
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    #languages .jp p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    
+    .main-infos img {
+        width: 80%;
+    }
+
+    .main-infos a {
+        font-size: 16px;
+    }
+
+    .main-screenshots img {
+        width: 480px;
+        height: 270px;
+    }
+
+    .main-screenshots span {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .main-screenshots p {
+        font-size: 28px;
+    }
+
+    .sub-content h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    nav {
+        margin-bottom: 96px;
+        font-size: 24px;
+    }
+
+    .nav-japan {
+        margin-bottom: 96px;
+        font-size: 36px;
+    }
+
+    #languages, #menu {
+        font-size: 16px;
+    }
+
+    #languages a:nth-of-type(5) {
+        font-size: 22px;
+    }
+
+    #languages .nl img {
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    #languages .jp p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-infos {
+        width: 75%;
+    }
+    
+    .main-infos img {
+        width: 90%;
+    }
+
+    .main-infos a {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+
+    .main-infos a:nth-of-type(2), .main-infos-japan a:nth-of-type(2) {
+        margin-left: 34px;
+    }
+
+    .main-infos-japan a {
+        font-size: 18px;
+    }
+
+    .main-screenshots img {
+        width: 480px;
+        height: 270px;
+    }
+
+    .sub-content h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        margin-bottom: 96px;
+        font-size: 18px;
+    }
+
+    #languages, #menu {
+        font-size: 16px;
+        width: 22%;
+        margin-left: -10%;
+    }
+
+    #languages .nl p {
+        font-size: 16px;
+    }
+
+    #languages .nl img {
+        margin-top: 6px;
+        margin-bottom: 2px;
+    }
+
+    #languages .jp p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    #menu_img {
+        display: none;
+    }
+
+    main {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-infos {
+        width: 75%;
+    }
+    
+    .main-infos img, .main-infos-japan img {
+        width: 90%;
+        margin-bottom: 24px;
+    }
+
+    .main-infos a {
+        font-size: 10px;
+        padding: 15px 25px;
+    }
+
+    .main-infos a:nth-of-type(2), .main-infos-japan a:nth-of-type(2) {
+        margin-left: 24px;
+    }
+
+    .main-infos-japan a {
+        font-size: 18px;
+    }
+
+    .main-screenshots img {
+        width: 80%;
+    }
+
+    .main-screenshots img {
+        width: 360px;
+        height: 180px;
+    }
+
+    .main-screenshots span {
+        font-size: 22px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .main-screenshots p {
+        font-size: 22px;
+    }
+
+    .sub-content {
+        margin-top: 48px;
+    }
+
+    .sub-content h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    nav {
+        margin-bottom: 56px;
+    }
+
+    nav a, p {
+        display: flex;
+        font-size: 18px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .nav-japan a, .nav-japan p {
+        font-size: 34px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+        font-size: 18px;
+    }
+
+    #languages {
+        width: 30%;
+        margin-left: -200px;
+    }
+
+    #menu_img {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos, .main-infos-japan {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 100%;
+    }
+
+    .main-infos a {
+        font-size: 18px;
+    }
+
+    .main-infos-japan a {
+        font-size: 24px;
+    }
+
+    .main-screenshots img {
+        width: 480px;
+        height: 270px;
+        margin-bottom: 12px;
+    }
+
+    .main-screenshots span {
+        font-size: 28px;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .main-screenshots p {
+        font-size: 28px;
+    }
+
+    .sub-content {
+        margin-bottom: 48px;
+    }
+
+    .sub-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin-bottom: 56px;
+    }
+
+    nav a, p {
+        display: flex;
+        font-size: 18px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+        font-size: 14px;
+    }
+
+    nav #languages a:nth-of-type(5) p {
+        font-size: 20px;
+    }
+
+    #languages {
+        width: 45%;
+        margin-left: -175px;
+    }
+
+    #menu_img {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 100%;
+    }
+
+    .main-infos a {
+        font-size: 12px;
+    }
+
+    .main-screenshots img {
+        width: 480px;
+        height: 270px;
+        margin-bottom: 12px;
+    }
+
+    .main-screenshots span {
+        font-size: 28px;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .main-screenshots p {
+        font-size: 28px;
+    }
+
+    .sub-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        margin-bottom: 48px;
+    }
+
+    nav a, p {
+        display: none;
+    }
+
+    nav #menu_img, nav #lang_img {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+    }
+
+    #languages {
+        width: 45%;
+    }
+
+    #menu {
+        width: 35%;
+    }
+
+    #menu a, #menu p {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    #menu_img {
+        display: flex;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 100%;
+    }
+
+    .main-infos a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        margin-bottom: 48px;
+    }
+
+    nav a, p {
+        display: none;
+    }
+
+    nav #menu_img, nav #lang_img {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+    }
+
+    #languages {
+        width: 45%;
+        margin-left: 0px;
+    }
+
+    #menu {
+        width: 35%;
+    }
+
+    #menu a, #menu p {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    #menu_img {
+        display: flex;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 100%;
+    }
+
+    .main-infos a {
+        font-size: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .main-screenshots {
+        margin-left: -16px;
+    }
+
+    .main-screenshots img {
+        width: 100%;
+        margin-left: 8px;
+    }
+
+    .sub-content {
+        margin-bottom: 48px;
+    }
+
+    .sub-content h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav {
+        margin-bottom: 48px;
+    }
+    
+    nav a, p {
+        display: none;
+    }
+
+    nav #menu_img, nav #lang_img {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+    }
+
+    #languages {
+        width: 50%;
+    }
+
+    #languages a, #languages p {
+        font-size: 12px;
+    }
+
+    #menu {
+        width: 35%;
+    }
+
+    #menu a, #menu p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    #menu_img {
+        display: flex;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 110%;
+        margin-left: -12px;
+    }
+
+    .main-infos a {
+        font-size: 10px;
+        padding: 15px 20px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .main-screenshots img {
+        width: 270px;
+        height: 160px;
+    }
+
+    .main-screenshots span {
+        font-size: 18px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .sub-content {
+        margin-bottom: 48px;
+    }
+
+    .sub-content h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav {
+        margin-bottom: 48px;
+    }
+    
+    nav a, p {
+        display: none;
+    }
+
+    nav #menu_img, nav #lang_img {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    nav #languages a, nav #languages p, nav #menu a, nav #menu p{
+        display: flex;
+        font-size: 10px;
+    }
+
+    nav #languages a:nth-of-type(5) p {
+        font-size: 14px;
+    }
+
+    nav #languages a:nth-of-type(5) img {
+        margin-top: 3 px;
+    }
+
+    #languages {
+        width: 50%;
+        margin-left: -35px;
+    }
+
+    #menu {
+        width: 35%;
+        margin-left: 2px;
+    }
+
+    #menu a, #menu p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    #menu_img {
+        display: flex;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-infos {
+        width: 100%;
+        margin-bottom: 76px;
+    }
+
+    .main-infos img, .main-infos-japan img {
+        width: 110%;
+        margin-left: -12px;
+    }
+
+    .main-infos a {
+        font-size: 8px;
+    }
+
+    .main-screenshots img {
+        width: 270px;
+        height: 180px;
+        margin-left: 12px;
+    }
+
+    .main-screenshots span {
+        font-size: 18px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main-screenshots p {
+        font-size: 18px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}

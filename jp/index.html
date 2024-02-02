@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <meta content="Titre" property="og:title">
+    <meta content="Description" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="#000000" data-react-helmet="true" name="theme-color">
+    <title>CTGP-7</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-japan">
+            <p><u>ホーム</u></p>
+            <a href="infos">じょうほう</a>
+            <a href="guides">ガイド</a>
+            <a href="credits">クレジット</a>
+            <div>
+                <img src="../assets/img/menu.png" id="menu_img" onclick="open_menu()" Alt="Menu"/>
+                <div id="menu" style="display: none;">
+                    <p><u>Home</u></p>
+                    <a href="infos">Infos</a>
+                    <a href="guides">Guides</a>
+                    <a href="credits">Credits</a>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/img/languages.png" onclick="open_languages()" Alt="Languages"/>
+                <div id="languages" style="display: none;">
+                    <a href="../">
+                        <img src="../assets/img/en_flag.png" Alt="English"/>
+                        <p>English</p>
+                    </a>
+                    <a href="../fr">
+                        <img src="../assets/img/fr_flag.png" Alt="Français"/>
+                        <p>Français</p>
+                    </a>
+                    <a href="../de">
+                        <img src="../assets/img/de_flag.png" Alt="Deutsch"/>
+                        <p>Deutsch</p>
+                    </a>
+                    <a href="../es">
+                        <img src="../assets/img/es_flag.png" Alt="Español"/>
+                        <p>Español</p>
+                    </a>
+                    <a href="../nl" class="nl">
+                        <img src="../assets/img/nl_flag.png" Alt="Nederlands"/>
+                        <p>Nederlands</p>
+                    </a>
+                    <span class="jp">
+                        <img src="../assets/img/jp_flag.png" Alt="日本"/>
+                        <p><u>日本</u></p>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content">
+            <div class="main-infos-japan">
+                <img src="../assets/img/logo.png" alt="Logo" width="75%"><br>
+                <a href="" target="_blank">ダウンロード</a> <a href="">もっと いんふぉ</a>
+            </div>
+            <div class="main-screenshots">
+                <img src="../assets/img/screenshot_01.png" id="screenshot" onclick="open_trailer()" alt="Screenshot"><br>
+                <p onclick="previous()"><</p> <span id="text"></span> <p onclick="next()">></p>
+            </div>
+        </section>
+        <section class="sub-content">
+            <h1><span>ファイナル</span> モッドパック にとって マリオカート <span>7</span></h1>
+            <h1>かいはつしゃ <a href="https://twitter.com/Pablomf6" target="_blank">PabloMK7</a></h1>
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    let folder = "../assets/img/";
+</script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/screenshots.js"></script>
