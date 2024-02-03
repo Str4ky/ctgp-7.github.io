@@ -22,6 +22,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../img/background.png");
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,10 @@ html {
     display: flex;
     gap: 0px;
     margin-top: 5%;
+}
+
+.main-infos, .main-screenshots {
+    margin-top: 56px;
 }
 
 .main-infos img, .main-infos-japan img {
@@ -141,7 +146,6 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 48px;
-    margin-bottom: 156px;
 }
 
 .nav-japan {
@@ -213,13 +217,13 @@ nav img:hover {
     border-bottom: solid transparent;
 }
 
-#languages a:nth-of-type(5) {
+#languages a:last-child {
     font-family: "Mintsoda";
     font-weight: bolder;
     font-size: 28px;
 }
 
-#languages a:nth-of-type(5) p {
+#languages a:last-child p {
     margin-top: 0px;
 }
 
@@ -245,6 +249,96 @@ nav img:hover {
 
 #menu_img {
     display: none;
+}
+
+.main-card {
+    font-family: "Press Start 2P";
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 65%;
+    background-color: #161819b3;
+    color: white;
+    box-shadow: 1px 1px 10px black;
+    padding: 24px;
+    margin-top: 48px;
+}
+
+.main-card p {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.collapsible {
+    font-family: "Press Start 2P", cursive;
+    background-color: #1f2022b3;
+    box-shadow: 1px 1px 10px black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.collapsible::after {
+    content: '>';
+    font-size: 16px;
+    color: white;
+    float: right;
+}
+
+.collapsible-active, .collapsible:hover {
+    background-color: #2e3235b3;
+}
+
+.collapsible-active::after {
+    transform: rotate(90deg);
+}
+
+.collapsible-content {
+    max-height: 0;
+    width: 75%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1f2022b3;
+    box-shadow: 1px 1px 10px black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.collapsible-content p {
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.collapsible-content ul {
+    width: 50%;
+    margin: auto;
+    list-style-type: none;
+}
+
+.collapsible-content li {
+    white-space: nowrap;
+    background-image: var(--img);
+    background-size: 100%;
+    background-position: var(--pos);
+    padding: 20px;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.collapsible-content li:hover {
+    background-size: 110%;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 1680px) {
@@ -328,12 +422,10 @@ nav img:hover {
 
 @media screen and (max-width: 1366px) {
     nav {
-        margin-bottom: 96px;
         font-size: 24px;
     }
 
     .nav-japan {
-        margin-bottom: 96px;
         font-size: 36px;
     }
 
@@ -341,7 +433,7 @@ nav img:hover {
         font-size: 16px;
     }
 
-    #languages a:nth-of-type(5) {
+    #languages a:last-child {
         font-size: 22px;
     }
 
@@ -398,7 +490,6 @@ nav img:hover {
 
 @media screen and (max-width: 1024px) {
     nav {
-        margin-bottom: 96px;
         font-size: 18px;
     }
 
@@ -483,10 +574,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 860px) {
-    nav {
-        margin-bottom: 56px;
-    }
-
     nav a, p {
         display: flex;
         font-size: 18px;
@@ -559,10 +646,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 600px) {
-    nav {
-        margin-bottom: 56px;
-    }
-
     nav a, p {
         display: flex;
         font-size: 18px;
@@ -575,7 +658,7 @@ nav img:hover {
         font-size: 14px;
     }
 
-    nav #languages a:nth-of-type(5) p {
+    nav #languages a:last-child p {
         font-size: 20px;
     }
 
@@ -627,10 +710,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 480px) {
-    nav {
-        margin-bottom: 48px;
-    }
-
     nav a, p {
         display: none;
     }
@@ -680,10 +759,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 700px) {
-    nav {
-        margin-bottom: 48px;
-    }
-
     nav a, p {
         display: none;
     }
@@ -753,10 +828,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 360px) {
-    nav {
-        margin-bottom: 48px;
-    }
-    
     nav a, p {
         display: none;
     }
@@ -833,10 +904,6 @@ nav img:hover {
 }
 
 @media screen and (max-width: 320px) {
-    nav {
-        margin-bottom: 48px;
-    }
-    
     nav a, p {
         display: none;
     }
@@ -851,11 +918,11 @@ nav img:hover {
         font-size: 10px;
     }
 
-    nav #languages a:nth-of-type(5) p {
+    nav #languages a:last-child p {
         font-size: 14px;
     }
 
-    nav #languages a:nth-of-type(5) img {
+    nav #languages a:last-child img {
         margin-top: 3 px;
     }
 
