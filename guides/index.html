@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="CTGP-7" property="og:title">
+    <meta content="The ultimate Mario Kart 7 modpack" property="og:description">
+    <meta content="https://ctgp-7.github.io" property="og:url">
+    <meta content="https://ctgp-7.github.io/assets/img/favicon.png" property="og:image">
+    <meta content="#e43e3e" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <title>CTGP-7</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../">Home</a>
+            <a href="../infos">Infos</a>
+            <p><u>Guides</u></p>
+            <a href="../socials">Socials</a>
+            <div>
+                <img src="../assets/img/menu.png" id="menu_img" onclick="open_menu()" Alt="Menu"/>
+                <div id="menu" style="display: none;">
+                    <a href="../">Home</a>
+                    <a href="../infos">Infos</a>
+                    <p><u>Guides</u></p>
+                    <a href="../socials">Socials</a>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/img/languages.png" id="lang_img" onclick="open_languages()" Alt="Languages"/>
+                <div id="languages" style="display: none;">
+                    <span>
+                        <img src="../assets/img/en_flag.png" Alt="English"/>
+                        <p><u>English</u></p>
+                    </span>
+                    <a href="../fr/guides">
+                        <img src="../assets/img/fr_flag.png" Alt="Français"/>
+                        <p>Français</p>
+                    </a>
+                    <a href="../de/guides">
+                        <img src="../assets/img/de_flag.png" Alt="Deutsch"/>
+                        <p>Deutsch</p>
+                    </a>
+                    <a href="../es/guides">
+                        <img src="../assets/img/es_flag.png" Alt="Español"/>
+                        <p>Español</p>
+                    </a>
+                    <a href="../it/guides">
+                        <img src="../assets/img/it_flag.png" Alt="Italia"/>
+                        <p>Italia</p>
+                    </a>
+                    <a href="../nl/guides">
+                        <img src="../assets/img/nl_flag.png" Alt="Nederlands"/>
+                        <p>Nederlands</p>
+                    </a>
+                    <a href="../jp/guides">
+                        <img src="../assets/img/jp_flag.png" Alt="日本"/>
+                        <p>日本</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content" style="flex-direction: column; margin-top: 24px;">
+            <div class="main-card">
+                <h1><u>Installation guide</u></h1><br><br>
+                <button class="collapsible">3DS installation</button>
+                <div class="collapsible-content">
+                    <p>To install the modpack you first need your legally obtained base Mario Kart 7 game in either cartridge format or installed on your system</p>
+                    <p>Then install the CIA file of the modpack either on <a href="https://gamebanana.com/mods/50221" target="_blank">Gamebanana</a> with FBI or using the <a href="https://universal-team.net/projects/universal-updater" target="_blank">Universal Updater</a></p>
+                    <p>Then launch the CTGP-7 Launcher from the home menu and follow the onscreen instructions to finish the installation</p>
+                </div>
+                <br>
+                <button class="collapsible">Citra installation</button>
+                <div class="collapsible-content">
+                    <p>To install the modpack you first need your legally obtained base Mario Kart 7 game as well as the legally obtained 1.2 update dummped in CIA format using <a href="https://3ds.hacks.guide/dumping-titles-and-game-cartridges.html" target="_blank">this guide</a></p>
+                    <p>Then install the CIA file of the modpack found on <a href="https://gamebanana.com/mods/50221" target="_blank">Gamebanana</a> and the game + update on Citra using the <span>File > Install a CIA file</span> option</p>
+                    <p>Then launch the CTGP-7 Launcher from Citra's menu and follow the onscreen instructions to finish the installation</p>
+                </div>
+                <br>
+            </div>
+            <div class="main-card">
+                <h1><u>Using the Mystuff folder</u></h1><br><br>
+                <p>To do</p>
+            </div>
+            <br><br>
+        </section>
+    </main>
+</body>
+</html>
+
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/collapsible.js"></script>
