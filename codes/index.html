@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="display: block;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +18,14 @@
         <nav>
             <a href="../">Home</a>
             <a href="../infos">Infos</a>
-            <p><u>Guides</u></p>
+            <a href="../guides">Guides</a>
             <a href="../socials">Socials</a>
             <div>
                 <img src="../assets/img/menu.png" id="menu_img" onclick="open_menu()" Alt="Menu"/>
                 <div id="menu" style="display: none;">
                     <a href="../">Home</a>
                     <a href="../infos">Infos</a>
-                    <p><u>Guides</u></p>
+                    <a href="../guides">Guides</a>
                     <a href="../socials">Socials</a>
                 </div>
             </div>
@@ -36,27 +36,27 @@
                         <img src="../assets/img/en_flag.png" Alt="English"/>
                         <p><u>English</u></p>
                     </span>
-                    <a href="../fr/guides">
+                    <a href="../fr/codes">
                         <img src="../assets/img/fr_flag.png" Alt="Français"/>
                         <p>Français</p>
                     </a>
-                    <a href="../de/guides">
+                    <a href="../de/codes">
                         <img src="../assets/img/de_flag.png" Alt="Deutsch"/>
                         <p>Deutsch</p>
                     </a>
-                    <a href="../es/guides">
+                    <a href="../es/codes">
                         <img src="../assets/img/es_flag.png" Alt="Español"/>
                         <p>Español</p>
                     </a>
-                    <a href="../it/guides">
+                    <a href="../it/codes">
                         <img src="../assets/img/it_flag.png" Alt="Italia"/>
                         <p>Italia</p>
                     </a>
-                    <a href="../nl/guides">
+                    <a href="../nl/codes">
                         <img src="../assets/img/nl_flag.png" Alt="Nederlands"/>
                         <p>Nederlands</p>
                     </a>
-                    <a href="../jp/guides">
+                    <a href="../jp/codes">
                         <img src="../assets/img/jp_flag.png" Alt="日本"/>
                         <p>日本</p>
                     </a>
@@ -67,26 +67,11 @@
     <main>
         <section class="main-content" style="flex-direction: column; margin-top: 24px;">
             <div class="main-card">
-                <h1><u>Installation guide</u></h1><br><br>
-                <button class="collapsible">3DS installation</button>
-                <div class="collapsible-content">
-                    <p>To install the modpack you first need your legally obtained base Mario Kart 7 game in either cartridge format or installed on your system</p>
-                    <p>Then install the CIA file of the modpack either on <a href="https://gamebanana.com/mods/50221" target="_blank">Gamebanana</a> with FBI or using the <a href="https://universal-team.net/projects/universal-updater" target="_blank">Universal Updater</a></p>
-                    <p>Finally launch the CTGP-7 Launcher from the home menu and follow the onscreen instructions to finish the installation</p>
-                </div>
-                <br>
-                <button class="collapsible">Citra installation</button>
-                <div class="collapsible-content">
-                    <p>To install the modpack you first need your legally obtained base Mario Kart 7 game as well as the legally obtained 1.2 update dummped in CIA format using <a href="https://3ds.hacks.guide/dumping-titles-and-game-cartridges.html" target="_blank">this guide</a></p>
-                    <p>Then install the CIA file of the modpack found on <a href="https://gamebanana.com/mods/50221" target="_blank">Gamebanana</a> and the game + update on Citra using the <span>File > Install a CIA file</span> option</p>
-                    <p>Finally launch the CTGP-7 Launcher from Citra's menu and follow the onscreen instructions to finish the installation</p>
-                </div>
-                <br><br>
-                <p class="error-message">During the installation if you see any error codes <a href="../codes">check here</a> for possible solutions but if you are experiencing any issues feel free to ask for help on the CTGP-7 <a href="https://discord.gg/ctgp-7-163070769067327488" target="_blank">Discord server</a></p>
-            </div>
-            <div class="main-card">
-                <h1><u>Using the Mystuff folder</u></h1><br><br>
-                <p>To do</p>
+                <h1><u>Error codes</u></h1><br><br>
+                <p>Enter bellow the error code that<br>the CTGP-7 Launcher gave you</p><br>
+                <input type="text" id="code" placeholder="Example 00000000"/><br>
+                <button onclick="check_en()" class="check">Check</button><br>
+                <p id="message">No error codes was checked yet</p>
             </div>
             <br>
         </section>
@@ -95,4 +80,4 @@
 </html>
 
 <script src="../assets/js/menu.js"></script>
-<script src="../assets/js/collapsible.js"></script>
+<script src="../assets/js/codes.js"></script>

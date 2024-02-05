@@ -351,6 +351,84 @@ nav img:hover {
     text-decoration: underline;
 }
 
+.socials {
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+    width: 50%;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+.socials img {
+    margin-right: 12px;
+    margin-bottom: -6px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.credits {
+    color: white;
+    text-decoration: none;
+}
+
+.credits:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    width: 80%;
+}
+
+.error-message a {
+    color: #1f4eb2;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}
+
+.main-card input[type="text"] {
+    font-family: "Press Start 2P";
+    font-size: 18px;
+    padding: 12px;
+    margin: 12px;
+    width: 35%;
+    border: none;
+    background-color: white;
+}
+
+.check {
+    font-family: "Press Start 2P";
+    font-size: 18px;
+    padding: 12px;
+    margin: 12px;
+    width: 20%;
+    border: none;
+    background-color: #db3030;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.check:hover {
+    background-color: #b21f1f;
+    transition: 0.2s;
+}
+
+
+#message {
+    width: 75%;
+}
+
 @media screen and (max-width: 1680px) {
     main {
         width: 100%;
