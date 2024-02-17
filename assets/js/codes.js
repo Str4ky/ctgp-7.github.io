@@ -23,10 +23,10 @@ function check_en() {
             message.innerText = "Failed to download the latest version information";
             break;
         case '00000009':
-            message.innerText = "Failed to download the base URL. Most likely caused from an unstable internet connection";
+            message.innerText = "Failed to download the base URL. Most likely caused by an unstable internet connection";
             break;
         case 'XXXXXXXX':
-            message.innerText = "AM error, couldn't install new version of the CTGP-7 launcher CIA";
+            message.innerText = "AM error, couldn't install the new version of the CTGP-7 launcher CIA";
             break;
         default:
             message.innerText = "The error code you have entered is invalid";

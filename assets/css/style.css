@@ -290,6 +290,7 @@ nav img:hover {
 
 .collapsible::after {
     content: '>';
+    transform: rotate(90deg);
     font-size: 16px;
     color: white;
     float: right;
@@ -300,7 +301,7 @@ nav img:hover {
 }
 
 .collapsible-active::after {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 .collapsible-content {
@@ -350,6 +351,14 @@ nav img:hover {
     text-decoration: underline;
 }
 
+.collapsible-content label {
+    color: #7c7c7c;
+}
+
+.collapsible-content label:hover {
+    cursor:text;
+}
+
 .socials {
     width: fit-content;
     margin: auto;
@@ -374,7 +383,7 @@ nav img:hover {
 }
 
 .credits {
-    color: white;
+    color: #1f4eb2;
     text-decoration: none;
 }
 
@@ -382,16 +391,16 @@ nav img:hover {
     text-decoration: underline;
 }
 
-.error-message {
+.additional-infos {
     width: 80%;
 }
 
-.error-message a {
+.additional-infos a {
     color: #1f4eb2;
     text-decoration: none;
 }
 
-.error-message a:hover {
+.additional-infos a:hover {
     text-decoration: underline;
 }
 
@@ -426,6 +435,10 @@ nav img:hover {
 
 #message {
     width: 75%;
+}
+
+.names p {
+    margin-bottom: -24px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -512,6 +525,10 @@ nav img:hover {
 
     .main-card h1 {
         font-size: 24px;
+    }
+
+    .main-card h3 {
+        font-size: 18px;
     }
 
     .main-card p {
@@ -770,6 +787,20 @@ nav img:hover {
     .main-card p, .collapsible-content li {
         font-size: 14px;
     }
+
+    .credits {
+        font-size: 16px;
+    }
+
+    .main-card input[type="text"] {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .check {
+        font-size: 14px;
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -844,6 +875,10 @@ nav img:hover {
         font-size: 20px;
     }
 
+    .main-card h3 {
+        font-size: 16px;
+    }
+
     .main-card p, .collapsible-content li {
         font-size: 11px;
     }
@@ -851,28 +886,34 @@ nav img:hover {
 
 @media screen and (max-width: 600px) {
     nav a, nav p {
-        display: flex;
-        font-size: 18px;
-        margin-left: 12px;
-        margin-right: 12px;
+        display: none;
+    }
+
+    nav #menu_img, nav #lang_img {
+        margin-left: 48px;
+        margin-right: 48px;
     }
 
     nav #languages a, nav #languages p, nav #menu a, nav #menu p{
         display: flex;
-        font-size: 14px;
-    }
-
-    nav #languages a:last-child p {
-        font-size: 20px;
     }
 
     #languages {
         width: 45%;
-        margin-left: -175px;
+        margin-left: 0px;
+    }
+
+    #menu {
+        width: 35%;
+    }
+
+    #menu a, #menu p {
+        font-size: 18px;
+        margin-bottom: 18px;
     }
 
     #menu_img {
-        display: none;
+        display: flex;
     }
 
     .main-content {
@@ -910,6 +951,15 @@ nav img:hover {
 
     .sub-content h1 {
         font-size: 38px;
+    }
+
+    .socials a {
+        font-size: 14px;
+    }
+
+    .socials img {
+        width: 15%;
+        margin-right: 12px;
     }
 }
 
@@ -966,6 +1016,10 @@ nav img:hover {
         font-size: 20px;
     }
 
+    .main-card h3 {
+        font-size: 16px;
+    }
+
     .collapsible {
         font-size: 12px;
     }
@@ -984,7 +1038,30 @@ nav img:hover {
     }
 
     .main-card p, .collapsible-content li {
-        font-size: 8px;
+        font-size: 10px;
+    }
+
+    .socials a {
+        font-size: 12px;
+    }
+
+    .socials img {
+        width: 16%;
+        margin-right: 10px;
+    }
+
+    .credits {
+        font-size: 10px;
+    }
+
+    .main-card input[type="text"] {
+        font-size: 16px;
+        width: 75%;
+    }
+
+    .check {
+        font-size: 14px;
+        width: 50%;
     }
 }
 
@@ -1072,6 +1149,10 @@ nav img:hover {
         line-height: 24px;
     }
 
+    .main-card h3 {
+        font-size: 12px;
+    }
+
     .main-card p {
         font-size: 10px;
     }
@@ -1092,6 +1173,25 @@ nav img:hover {
     .collapsible-content li {
         width: 90%;
         font-size: 6px;
+    }
+
+    .socials a {
+        font-size: 9px;
+    }
+
+    .socials img {
+        width: 20%;
+        margin-right: 10px;
+    }
+
+    .main-card input[type="text"] {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .check {
+        font-size: 10px;
+        width: 60%;
     }
 }
 
